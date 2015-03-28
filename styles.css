@@ -79,7 +79,9 @@ a:active {
 	-moz-transition: opacity 0.5s, transform 0.5s;
 	-o-transition: opacity 0.5s, transform 0.5s;
 	-webkit-transition: opacity 0.5s, transform 0.5s;
+	transition: opacity 0.5s, -webkit-transform 0.5s;
 	transition: opacity 0.5s, transform 0.5s;
+
 }
 
 .hero-image.hidden {
