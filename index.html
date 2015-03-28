@@ -8,14 +8,30 @@
 </head>
 <body>
 <section class="hero">
-	<ul class="hero-info">
-		<li class="hero-info-item">Tingan Ho</li>
-		<li class="hero-info-item"><a href="mailto:tingan87@gmail.com" target="_blank">tingan87@gmail.com</a></li>
-		<li class="hero-info-item"><a href="https://twitter.com/tingan87" target="_blank">@tingan87</a></li>
-		<li class="hero-info-item"><a href="https://github.com/tinganho" target="_blank">Github</a></li>
-	</ul>
-	<img class="hero-image" src="profile.png"></img>
-	<h1 class="hero-title">Designer, coder & thinker.</h1>
+	<div class="hero-background hidden">
+		<ul class="hero-info">
+			<li class="hero-info-item">Tingan Ho</li>
+			<li class="hero-info-item"><a href="mailto:tingan87@gmail.com" target="_blank">tingan87@gmail.com</a></li>
+			<li class="hero-info-item"><a href="https://twitter.com/tingan87" target="_blank">@tingan87</a></li>
+			<li class="hero-info-item"><a href="https://github.com/tinganho" target="_blank">Github</a></li>
+		</ul>
+		<img class="hero-image hidden" src="profile.png"></img>
+		<h1 class="hero-title">Designer, coder & thinker.</h1>
+	</div>
+	<script>
+		var backgroundEl = document.getElementsByClassName('hero-background')[0];
+		var profileEl = document.getElementsByClassName('hero-image')[0];
+		var img = document.createElement('img');
+		img.src = 'background.jpg';
+		img.onload = function() {
+			backgroundEl.classList.remove('hidden');
+			backgroundEl.classList.add('revealed');
+			setTimeout(function() {
+				profileEl.classList.remove('hidden');
+				profileEl.classList.add('revealed');
+			}, 300);
+		}
+	</script>
 </section>
 <section class="main">
 	<section class="promo-list">

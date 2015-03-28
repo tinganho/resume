@@ -23,10 +23,38 @@ a:active {
 
 .hero {
 	position: relative;
-	background-image: url('background.jpg');
-	background-size: cover;
 	height: 600px;
 	overflow: hidden;
+	background-image: -ms-linear-gradient(top, #565A69 0%, #000000 100%);
+	background-image: -moz-linear-gradient(top, #565A69 0%, #000000 100%);
+	background-image: -o-linear-gradient(top, #565A69 0%, #000000 100%);
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #565A69), color-stop(1, #000000));
+	background-image: -webkit-linear-gradient(top, #565A69 0%, #000000 100%);
+	background-image: linear-gradient(to bottom, #565A69 0%, #000000 100%);
+}
+
+.hero-background {
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-image: url('background.jpg');
+	background-size: cover;
+	height: 100%;
+	width: 100%;
+	-ms-transition: opacity 0.5s;
+	-khtml-transition: opacity 0.5s;
+	-moz-transition: opacity 0.5s;
+	-o-transition: opacity 0.5s;
+	-webkit-transition: opacity 0.5s;
+	transition: opacity 0.5s;
+}
+
+.hero-background.hidden {
+	opacity: 0;
+}
+
+.hero-background.revealed {
+	opacity: 1;
 }
 
 .hero-info {
@@ -45,6 +73,21 @@ a:active {
 	width: 200px;
 	height: 200px;
 	margin: 150px auto 0;
+	z-index: 1;
+	-ms-transition: opacity 0.5s;
+	-khtml-transition: opacity 0.5s;
+	-moz-transition: opacity 0.5s;
+	-o-transition: opacity 0.5s;
+	-webkit-transition: opacity 0.5s;
+	transition: opacity 0.5s;
+}
+
+.hero-image.hidden {
+	opacity: 0;
+}
+
+.hero-image.revealed {
+	opacity: 1;
 }
 
 .hero-title {
