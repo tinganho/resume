@@ -116,12 +116,25 @@ a:active {
 	width: 800px;
 	margin: 0 auto;
 	padding: 0 40px 200px;
+	overflow: hidden;
+}
+
+@media(max-width: 600px) {
+	.main {
+		width: calc(100% - 80px);
+	}
 }
 
 .promo-list {
 	float: left;
 	width: 360px;
 	padding: 0 20px;
+}
+
+@media(max-width: 600px) {
+	.promo-list {
+		width: calc(100% - 40px);
+	}
 }
 
 .promo-list-title {
@@ -135,6 +148,7 @@ a:active {
 	color: #0e0e0e;
 	font-weight: 200;
 	margin: 30px 0;
+  font-size: 18px;
 }
 
 .promo-list-item-desc {
@@ -166,4 +180,12 @@ a:active {
 	clear: both;
 	padding: 0 20px;
 	overflow: hidden;
+	float: left;
+  width: 720px;
+}
+
+@media(max-width: 600px) {
+	.promo-list-full {
+		width: calc(100% - 40px);
+	}
 }
