@@ -67,13 +67,13 @@ a:active {
 @media(max-width: 600px) {
 	.hero-info {
 		font-size: 14px;
+		left: 20px;
+		top: 15px;
 	}
 }
 
 .hero-info-item {
 	margin: 15px 0;
-	left: 20px;
-	top: 15px;
 }
 
 @media(max-width: 600px) {
