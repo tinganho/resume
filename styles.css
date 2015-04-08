@@ -86,7 +86,8 @@ a:active {
 	display: block;
 	width: 200px;
 	height: 200px;
-	margin: 150px auto 0;
+	margin: 0 auto 0;
+	padding-top: 150px;
 	z-index: 1;
 	-ms-transition: opacity 0.5s, transform 0.5s;
 	-khtml-transition: opacity 0.5s, transform 0.5s;
