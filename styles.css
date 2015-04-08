@@ -119,7 +119,7 @@ a:active {
 	overflow: hidden;
 }
 
-@media(max-width: 600px) {
+@media(max-width: 880px) {
 	.main {
 		width: calc(100% - 80px);
 	}
